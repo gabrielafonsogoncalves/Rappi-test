@@ -41,6 +41,7 @@
         item.itemId = [NSNumber numberWithInteger:[dictionary[kId] integerValue]];
         item.name = [dictionary[kName] capitalizedString];
         item.itemDescription = dictionary[kDescription];
+        item.itemEnabled = dictionary[kEnabled];
         
         if (dictionary[kImagePath] && dictionary[kImagePath] != [NSNull null]) {
             item.itemImage = [self.context build:NSStringFromClass([IMImage class]) fromDictionary:dictionary];

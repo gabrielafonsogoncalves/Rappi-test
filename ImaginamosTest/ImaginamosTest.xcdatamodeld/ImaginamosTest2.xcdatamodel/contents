@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="IMCategory" representedClassName="IMCategory" syncable="YES">
+        <attribute name="categoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categoryImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMImage" inverseName="category" inverseEntity="IMImage" syncable="YES"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMSubcategory" inverseName="category" inverseEntity="IMSubcategory" syncable="YES"/>
+    </entity>
+    <entity name="IMCItem" representedClassName="IMCItem" syncable="YES">
+        <attribute name="itemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemEnabled" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="itemImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMImage" inverseName="item" inverseEntity="IMImage" syncable="YES"/>
+        <relationship name="subcategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMSubcategory" inverseName="items" inverseEntity="IMSubcategory" syncable="YES"/>
+    </entity>
+    <entity name="IMImage" representedClassName="IMImage" syncable="YES">
+        <attribute name="downloaded" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="imageId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="imageLocalPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMCategory" inverseName="categoryImage" inverseEntity="IMCategory" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMCItem" inverseName="itemImage" inverseEntity="IMCItem" syncable="YES"/>
+    </entity>
+    <entity name="IMSubcategory" representedClassName="IMSubcategory" syncable="YES">
+        <attribute name="enabled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subcategoryId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="IMCategory" inverseName="subcategories" inverseEntity="IMCategory" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IMCItem" inverseName="subcategory" inverseEntity="IMCItem" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="IMCategory" positionX="-38" positionY="-198" width="128" height="118"/>
+        <element name="IMCItem" positionX="-18" positionY="99" width="128" height="135"/>
+        <element name="IMImage" positionX="250" positionY="-36" width="128" height="135"/>
+        <element name="IMSubcategory" positionX="-272" positionY="-36" width="128" height="118"/>
+    </elements>
+</model>

@@ -25,7 +25,7 @@
     IMCItemCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"items-cell" forIndexPath:indexPath];
     IMCItem *item = self.items[indexPath.row];
     cell.itemLabel.text = item.name;
-    cell.itemDescriptionTextView.text = item.itemDescription;
+    cell.itemDescriptionTextView.text = [item itemDescriptionCleaned];
     cell.itemImageView.image = [IMImageService imageFromURL:item.itemImage.imageUrl];
     
     return cell;

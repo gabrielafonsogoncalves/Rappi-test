@@ -16,7 +16,17 @@
 @dynamic itemDescription;
 @dynamic itemId;
 @dynamic name;
+@dynamic itemEnabled;
 @dynamic itemImage;
 @dynamic subcategory;
+
+- (NSString *)itemDescriptionCleaned {
+    
+    if (self.itemDescription && ![@"" isEqualToString:self.itemDescription]) {
+        return self.itemDescription;
+    }
+    
+    return NSLocalizedString(@"No se posee información", nil);
+}
 
 @end

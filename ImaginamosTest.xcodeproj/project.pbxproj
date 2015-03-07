@@ -30,6 +30,7 @@
 		D90B250C1AAA8DAB0076F006 /* IMCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B250B1AAA8DAB0076F006 /* IMCItem.m */; };
 		D90B250F1AAA8F1D0076F006 /* IMAbstractServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B250E1AAA8F1D0076F006 /* IMAbstractServiceFactory.m */; };
 		D90B25131AAA91680076F006 /* IMCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B25121AAA91680076F006 /* IMCConstants.m */; };
+		D9530DFF1AAB556500FB1851 /* IMCItemDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9530DFE1AAB556500FB1851 /* IMCItemDetailsViewController.m */; };
 		D962DABD1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DABC1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m */; };
 		D962DAC11AAAA30500D2A2F0 /* IMCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC01AAAA30500D2A2F0 /* IMCategoriesViewController.m */; };
 		D962DAC41AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC31AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m */; };
@@ -107,6 +108,10 @@
 		D90B250E1AAA8F1D0076F006 /* IMAbstractServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAbstractServiceFactory.m; path = Factory/IMAbstractServiceFactory.m; sourceTree = "<group>"; };
 		D90B25111AAA91680076F006 /* IMCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCConstants.h; path = Util/IMCConstants.h; sourceTree = "<group>"; };
 		D90B25121AAA91680076F006 /* IMCConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCConstants.m; path = Util/IMCConstants.m; sourceTree = "<group>"; };
+		D9530DFD1AAB556500FB1851 /* IMCItemDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCItemDetailsViewController.h; path = Controllers/IMCItemDetailsViewController.h; sourceTree = "<group>"; };
+		D9530DFE1AAB556500FB1851 /* IMCItemDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCItemDetailsViewController.m; path = Controllers/IMCItemDetailsViewController.m; sourceTree = "<group>"; };
+		D9530E001AAB56DD00FB1851 /* ImaginamosTest2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImaginamosTest2.xcdatamodel; sourceTree = "<group>"; };
+		D9530E011AAB5ABD00FB1851 /* ImaginamosTest 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ImaginamosTest 2.xcdatamodel"; sourceTree = "<group>"; };
 		D962DABB1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoryCollectionViewCell.h; path = Views/IMCategoryCollectionViewCell.h; sourceTree = "<group>"; };
 		D962DABC1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoryCollectionViewCell.m; path = Views/IMCategoryCollectionViewCell.m; sourceTree = "<group>"; };
 		D962DABF1AAAA30500D2A2F0 /* IMCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoriesViewController.h; path = Controllers/IMCategoriesViewController.h; sourceTree = "<group>"; };
@@ -292,6 +297,8 @@
 				D962DAC01AAAA30500D2A2F0 /* IMCategoriesViewController.m */,
 				D98F36E51AAAB97D00948118 /* IMCItemsViewController.h */,
 				D98F36E61AAAB97D00948118 /* IMCItemsViewController.m */,
+				D9530DFD1AAB556500FB1851 /* IMCItemDetailsViewController.h */,
+				D9530DFE1AAB556500FB1851 /* IMCItemDetailsViewController.m */,
 				D962DAC21AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.h */,
 				D962DAC31AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m */,
 				D962DAC51AAAADDE00D2A2F0 /* IMSubcategoryDataSource.h */,
@@ -523,6 +530,7 @@
 				D90B24E31AAA791C0076F006 /* IMImage.m in Sources */,
 				D962DAC71AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m in Sources */,
 				D90B250C1AAA8DAB0076F006 /* IMCItem.m in Sources */,
+				D9530DFF1AAB556500FB1851 /* IMCItemDetailsViewController.m in Sources */,
 				D9E406211AAA977100FEF781 /* IMQueueService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,9 +741,11 @@
 		D90B24B21AAA60940076F006 /* ImaginamosTest.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				D9530E011AAB5ABD00FB1851 /* ImaginamosTest 2.xcdatamodel */,
+				D9530E001AAB56DD00FB1851 /* ImaginamosTest2.xcdatamodel */,
 				D90B24B31AAA60940076F006 /* ImaginamosTest.xcdatamodel */,
 			);
-			currentVersion = D90B24B31AAA60940076F006 /* ImaginamosTest.xcdatamodel */;
+			currentVersion = D9530E011AAB5ABD00FB1851 /* ImaginamosTest 2.xcdatamodel */;
 			path = ImaginamosTest.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

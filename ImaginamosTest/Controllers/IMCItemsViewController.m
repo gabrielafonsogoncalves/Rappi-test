@@ -8,6 +8,7 @@
 
 #import "IMCItemsViewController.h"
 #import "IMItemCollectionViewDataSource.h"
+#import "IMCItemDetailsViewController.h"
 
 @interface IMCItemsViewController ()
 
@@ -37,8 +38,17 @@
     [self.itemsCollectionView reloadData];
 }
 
-- (IBAction)close:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.destinationViewController isKindOfClass:[IMCItemDetailsViewController class]]) {
+        IMCItemDetailsViewController *viewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [[self.itemsCollectionView indexPathsForSelectedItems] firstObject];
+        viewController.item = self.itemDataSource.items[indexPath.row];
+    }
+}
+
+- (IBAction)close:(id)sender {
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

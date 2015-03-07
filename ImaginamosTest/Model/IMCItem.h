@@ -17,7 +17,10 @@
 @property (nonatomic, retain) NSString * itemDescription;
 @property (nonatomic, retain) NSNumber * itemId;
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic) BOOL itemEnabled;
 @property (nonatomic, retain) IMImage *itemImage;
 @property (nonatomic, retain) IMSubcategory *subcategory;
+
+- (NSString *)itemDescriptionCleaned;
 
 @end
