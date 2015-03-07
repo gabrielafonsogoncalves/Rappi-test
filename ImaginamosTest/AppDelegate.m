@@ -6,7 +6,9 @@
 //  Copyright (c) 2015 Gabriel Afonso. All rights reserved.
 //
 
+#import <AFNetworking/AFNetworking.h>
 #import "AppDelegate.h"
+#import "IMStartViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,12 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    IMStartViewController *rootViewController = (IMStartViewController *) self.window.rootViewController;
+    rootViewController.managedObjectContext = self.managedObjectContext;
+    
     return YES;
 }
 
@@ -104,7 +109,7 @@
     if (!coordinator) {
         return nil;
     }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
 }

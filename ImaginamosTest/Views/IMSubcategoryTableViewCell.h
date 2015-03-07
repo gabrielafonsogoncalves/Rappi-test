@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  IMSubcategoryTableViewCell.h
 //  ImaginamosTest
 //
 //  Created by Gabriel Afonso on 3/6/15.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface IMSubcategoryTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *subcategoryLabel;
 
 @end
-

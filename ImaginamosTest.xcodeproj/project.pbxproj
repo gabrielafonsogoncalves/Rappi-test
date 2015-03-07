@@ -7,14 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5D6C9B98819B234C19B682F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 578F8D67078A5BECC5174D54 /* libPods.a */; };
 		D90B24AE1AAA60940076F006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24AD1AAA60940076F006 /* main.m */; };
 		D90B24B11AAA60940076F006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24B01AAA60940076F006 /* AppDelegate.m */; };
 		D90B24B41AAA60940076F006 /* ImaginamosTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D90B24B21AAA60940076F006 /* ImaginamosTest.xcdatamodeld */; };
-		D90B24B71AAA60940076F006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24B61AAA60940076F006 /* ViewController.m */; };
 		D90B24BA1AAA60940076F006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90B24B81AAA60940076F006 /* Main.storyboard */; };
 		D90B24BC1AAA60940076F006 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90B24BB1AAA60940076F006 /* Images.xcassets */; };
-		D90B24BF1AAA60940076F006 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D90B24BD1AAA60940076F006 /* LaunchScreen.xib */; };
 		D90B24CB1AAA60940076F006 /* ImaginamosTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24CA1AAA60940076F006 /* ImaginamosTestTests.m */; };
+		D90B24DA1AAA77540076F006 /* IMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24D91AAA77540076F006 /* IMStartViewController.m */; };
+		D90B24E01AAA791C0076F006 /* IMCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24DF1AAA791C0076F006 /* IMCategory.m */; };
+		D90B24E31AAA791C0076F006 /* IMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24E21AAA791C0076F006 /* IMImage.m */; };
+		D90B24E61AAA791C0076F006 /* IMSubcategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24E51AAA791C0076F006 /* IMSubcategory.m */; };
+		D90B24E91AAA7A570076F006 /* IMBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24E81AAA7A570076F006 /* IMBuilder.m */; };
+		D90B24EE1AAA7BC00076F006 /* IMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24ED1AAA7BC00076F006 /* IMFactory.m */; };
+		D90B24F11AAA7BFB0076F006 /* IMManagedObjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24F01AAA7BFB0076F006 /* IMManagedObjectFactory.m */; };
+		D90B24F41AAA7C6C0076F006 /* IMCategoryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24F31AAA7C6C0076F006 /* IMCategoryBuilder.m */; };
+		D90B24F71AAA7D3C0076F006 /* IMSubcategoryBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24F61AAA7D3C0076F006 /* IMSubcategoryBuilder.m */; };
+		D90B24FA1AAA7DC40076F006 /* IMItemBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24F91AAA7DC40076F006 /* IMItemBuilder.m */; };
+		D90B24FD1AAA7E5B0076F006 /* IMImageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B24FC1AAA7E5B0076F006 /* IMImageBuilder.m */; };
+		D90B25011AAA7FAD0076F006 /* IMCategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B25001AAA7FAD0076F006 /* IMCategoryService.m */; };
+		D90B25041AAA80930076F006 /* IMConnectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B25031AAA80930076F006 /* IMConnectionService.m */; };
+		D90B250C1AAA8DAB0076F006 /* IMCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B250B1AAA8DAB0076F006 /* IMCItem.m */; };
+		D90B250F1AAA8F1D0076F006 /* IMAbstractServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B250E1AAA8F1D0076F006 /* IMAbstractServiceFactory.m */; };
+		D90B25131AAA91680076F006 /* IMCConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D90B25121AAA91680076F006 /* IMCConstants.m */; };
+		D962DABD1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DABC1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m */; };
+		D962DAC11AAAA30500D2A2F0 /* IMCategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC01AAAA30500D2A2F0 /* IMCategoriesViewController.m */; };
+		D962DAC41AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC31AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m */; };
+		D962DAC71AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC61AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m */; };
+		D962DACA1AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D962DAC91AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.m */; };
+		D98F36E71AAAB97D00948118 /* IMCItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D98F36E61AAAB97D00948118 /* IMCItemsViewController.m */; };
+		D99BEA131AAABEAF00B9C005 /* IMSubcategoryService.m in Sources */ = {isa = PBXBuildFile; fileRef = D99BEA121AAABEAF00B9C005 /* IMSubcategoryService.m */; };
+		D99BEA151AAAC6A800B9C005 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = D99BEA141AAAC6A800B9C005 /* ic_close.png */; };
+		D99BEA171AAAC6E800B9C005 /* ic_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D99BEA161AAAC6E800B9C005 /* ic_close@2x.png */; };
+		D99BEA1A1AAAC83500B9C005 /* IMCItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D99BEA191AAAC83500B9C005 /* IMCItemCollectionViewCell.m */; };
+		D99BEA1D1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D99BEA1C1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.m */; };
+		D99BEA201AAACEB100B9C005 /* IMImageService.m in Sources */ = {isa = PBXBuildFile; fileRef = D99BEA1F1AAACEB100B9C005 /* IMImageService.m */; };
+		D99BEA221AAAD99000B9C005 /* ic_no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D99BEA211AAAD99000B9C005 /* ic_no_image.png */; };
+		D99BEA241AAAD99B00B9C005 /* ic_no_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D99BEA231AAAD99B00B9C005 /* ic_no_image@2x.png */; };
+		D9E406211AAA977100FEF781 /* IMQueueService.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E406201AAA977100FEF781 /* IMQueueService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +58,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5195CBF9C005AEB8EBCCB443 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		578F8D67078A5BECC5174D54 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		98436ECA26CC23D0912AB472 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D90B24A81AAA60940076F006 /* ImaginamosTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginamosTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90B24AC1AAA60940076F006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90B24AD1AAA60940076F006 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D90B24AF1AAA60940076F006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D90B24B01AAA60940076F006 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D90B24B31AAA60940076F006 /* ImaginamosTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImaginamosTest.xcdatamodel; sourceTree = "<group>"; };
-		D90B24B51AAA60940076F006 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D90B24B61AAA60940076F006 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D90B24B91AAA60940076F006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D90B24BB1AAA60940076F006 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D90B24BE1AAA60940076F006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D90B24C41AAA60940076F006 /* ImaginamosTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginamosTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90B24C91AAA60940076F006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90B24CA1AAA60940076F006 /* ImaginamosTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginamosTestTests.m; sourceTree = "<group>"; };
+		D90B24D81AAA77540076F006 /* IMStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMStartViewController.h; path = Controllers/IMStartViewController.h; sourceTree = "<group>"; };
+		D90B24D91AAA77540076F006 /* IMStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMStartViewController.m; path = Controllers/IMStartViewController.m; sourceTree = "<group>"; };
+		D90B24DE1AAA791C0076F006 /* IMCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategory.h; path = Model/IMCategory.h; sourceTree = "<group>"; };
+		D90B24DF1AAA791C0076F006 /* IMCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategory.m; path = Model/IMCategory.m; sourceTree = "<group>"; };
+		D90B24E11AAA791C0076F006 /* IMImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMImage.h; path = Model/IMImage.h; sourceTree = "<group>"; };
+		D90B24E21AAA791C0076F006 /* IMImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMImage.m; path = Model/IMImage.m; sourceTree = "<group>"; };
+		D90B24E41AAA791C0076F006 /* IMSubcategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSubcategory.h; path = Model/IMSubcategory.h; sourceTree = "<group>"; };
+		D90B24E51AAA791C0076F006 /* IMSubcategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSubcategory.m; path = Model/IMSubcategory.m; sourceTree = "<group>"; };
+		D90B24E71AAA7A570076F006 /* IMBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMBuilder.h; path = Builders/IMBuilder.h; sourceTree = "<group>"; };
+		D90B24E81AAA7A570076F006 /* IMBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMBuilder.m; path = Builders/IMBuilder.m; sourceTree = "<group>"; };
+		D90B24EA1AAA7B010076F006 /* IMObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMObjectBuilder.h; path = Builders/IMObjectBuilder.h; sourceTree = "<group>"; };
+		D90B24EC1AAA7BC00076F006 /* IMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMFactory.h; path = Factory/IMFactory.h; sourceTree = "<group>"; };
+		D90B24ED1AAA7BC00076F006 /* IMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMFactory.m; path = Factory/IMFactory.m; sourceTree = "<group>"; };
+		D90B24EF1AAA7BFB0076F006 /* IMManagedObjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMManagedObjectFactory.h; path = Factory/IMManagedObjectFactory.h; sourceTree = "<group>"; };
+		D90B24F01AAA7BFB0076F006 /* IMManagedObjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMManagedObjectFactory.m; path = Factory/IMManagedObjectFactory.m; sourceTree = "<group>"; };
+		D90B24F21AAA7C6C0076F006 /* IMCategoryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoryBuilder.h; path = Builders/IMCategoryBuilder.h; sourceTree = "<group>"; };
+		D90B24F31AAA7C6C0076F006 /* IMCategoryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoryBuilder.m; path = Builders/IMCategoryBuilder.m; sourceTree = "<group>"; };
+		D90B24F51AAA7D3C0076F006 /* IMSubcategoryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSubcategoryBuilder.h; path = Builders/IMSubcategoryBuilder.h; sourceTree = "<group>"; };
+		D90B24F61AAA7D3C0076F006 /* IMSubcategoryBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSubcategoryBuilder.m; path = Builders/IMSubcategoryBuilder.m; sourceTree = "<group>"; };
+		D90B24F81AAA7DC40076F006 /* IMItemBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMItemBuilder.h; path = Builders/IMItemBuilder.h; sourceTree = "<group>"; };
+		D90B24F91AAA7DC40076F006 /* IMItemBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMItemBuilder.m; path = Builders/IMItemBuilder.m; sourceTree = "<group>"; };
+		D90B24FB1AAA7E5B0076F006 /* IMImageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMImageBuilder.h; path = Builders/IMImageBuilder.h; sourceTree = "<group>"; };
+		D90B24FC1AAA7E5B0076F006 /* IMImageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMImageBuilder.m; path = Builders/IMImageBuilder.m; sourceTree = "<group>"; };
+		D90B24FF1AAA7FAD0076F006 /* IMCategoryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoryService.h; path = Services/IMCategoryService.h; sourceTree = "<group>"; };
+		D90B25001AAA7FAD0076F006 /* IMCategoryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoryService.m; path = Services/IMCategoryService.m; sourceTree = "<group>"; };
+		D90B25021AAA80930076F006 /* IMConnectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMConnectionService.h; path = Services/IMConnectionService.h; sourceTree = "<group>"; };
+		D90B25031AAA80930076F006 /* IMConnectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMConnectionService.m; path = Services/IMConnectionService.m; sourceTree = "<group>"; };
+		D90B25051AAA819E0076F006 /* IMServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMServiceDelegate.h; path = Services/IMServiceDelegate.h; sourceTree = "<group>"; };
+		D90B25061AAA8B840076F006 /* IMControllersDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMControllersDelegate.h; path = Controllers/IMControllersDelegate.h; sourceTree = "<group>"; };
+		D90B250A1AAA8DAB0076F006 /* IMCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCItem.h; path = Model/IMCItem.h; sourceTree = "<group>"; };
+		D90B250B1AAA8DAB0076F006 /* IMCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCItem.m; path = Model/IMCItem.m; sourceTree = "<group>"; };
+		D90B250D1AAA8F1D0076F006 /* IMAbstractServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMAbstractServiceFactory.h; path = Factory/IMAbstractServiceFactory.h; sourceTree = "<group>"; };
+		D90B250E1AAA8F1D0076F006 /* IMAbstractServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMAbstractServiceFactory.m; path = Factory/IMAbstractServiceFactory.m; sourceTree = "<group>"; };
+		D90B25111AAA91680076F006 /* IMCConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCConstants.h; path = Util/IMCConstants.h; sourceTree = "<group>"; };
+		D90B25121AAA91680076F006 /* IMCConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCConstants.m; path = Util/IMCConstants.m; sourceTree = "<group>"; };
+		D962DABB1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoryCollectionViewCell.h; path = Views/IMCategoryCollectionViewCell.h; sourceTree = "<group>"; };
+		D962DABC1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoryCollectionViewCell.m; path = Views/IMCategoryCollectionViewCell.m; sourceTree = "<group>"; };
+		D962DABF1AAAA30500D2A2F0 /* IMCategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoriesViewController.h; path = Controllers/IMCategoriesViewController.h; sourceTree = "<group>"; };
+		D962DAC01AAAA30500D2A2F0 /* IMCategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoriesViewController.m; path = Controllers/IMCategoriesViewController.m; sourceTree = "<group>"; };
+		D962DAC21AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCategoriesCollectionViewDataSource.h; path = Controllers/IMCategoriesCollectionViewDataSource.h; sourceTree = "<group>"; };
+		D962DAC31AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCategoriesCollectionViewDataSource.m; path = Controllers/IMCategoriesCollectionViewDataSource.m; sourceTree = "<group>"; };
+		D962DAC51AAAADDE00D2A2F0 /* IMSubcategoryDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSubcategoryDataSource.h; path = Controllers/IMSubcategoryDataSource.h; sourceTree = "<group>"; };
+		D962DAC61AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSubcategoryDataSource.m; path = Controllers/IMSubcategoryDataSource.m; sourceTree = "<group>"; };
+		D962DAC81AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSubcategoryTableViewCell.h; path = Views/IMSubcategoryTableViewCell.h; sourceTree = "<group>"; };
+		D962DAC91AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSubcategoryTableViewCell.m; path = Views/IMSubcategoryTableViewCell.m; sourceTree = "<group>"; };
+		D98F36E51AAAB97D00948118 /* IMCItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCItemsViewController.h; path = Controllers/IMCItemsViewController.h; sourceTree = "<group>"; };
+		D98F36E61AAAB97D00948118 /* IMCItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCItemsViewController.m; path = Controllers/IMCItemsViewController.m; sourceTree = "<group>"; };
+		D99BEA111AAABEAF00B9C005 /* IMSubcategoryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMSubcategoryService.h; path = Services/IMSubcategoryService.h; sourceTree = "<group>"; };
+		D99BEA121AAABEAF00B9C005 /* IMSubcategoryService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMSubcategoryService.m; path = Services/IMSubcategoryService.m; sourceTree = "<group>"; };
+		D99BEA141AAAC6A800B9C005 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		D99BEA161AAAC6E800B9C005 /* ic_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_close@2x.png"; sourceTree = "<group>"; };
+		D99BEA181AAAC83500B9C005 /* IMCItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMCItemCollectionViewCell.h; path = Views/IMCItemCollectionViewCell.h; sourceTree = "<group>"; };
+		D99BEA191AAAC83500B9C005 /* IMCItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMCItemCollectionViewCell.m; path = Views/IMCItemCollectionViewCell.m; sourceTree = "<group>"; };
+		D99BEA1B1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMItemCollectionViewDataSource.h; path = Controllers/IMItemCollectionViewDataSource.h; sourceTree = "<group>"; };
+		D99BEA1C1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMItemCollectionViewDataSource.m; path = Controllers/IMItemCollectionViewDataSource.m; sourceTree = "<group>"; };
+		D99BEA1E1AAACEB100B9C005 /* IMImageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMImageService.h; path = Services/IMImageService.h; sourceTree = "<group>"; };
+		D99BEA1F1AAACEB100B9C005 /* IMImageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMImageService.m; path = Services/IMImageService.m; sourceTree = "<group>"; };
+		D99BEA211AAAD99000B9C005 /* ic_no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_no_image.png; sourceTree = "<group>"; };
+		D99BEA231AAAD99B00B9C005 /* ic_no_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_no_image@2x.png"; sourceTree = "<group>"; };
+		D9E4061F1AAA977100FEF781 /* IMQueueService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMQueueService.h; path = Services/IMQueueService.h; sourceTree = "<group>"; };
+		D9E406201AAA977100FEF781 /* IMQueueService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMQueueService.m; path = Services/IMQueueService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D6C9B98819B234C19B682F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +154,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23904CF698D650CB3D73D005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578F8D67078A5BECC5174D54 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		458ABC5A1A4415E399FCBE1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5195CBF9C005AEB8EBCCB443 /* Pods.debug.xcconfig */,
+				98436ECA26CC23D0912AB472 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D90B249F1AAA60940076F006 = {
 			isa = PBXGroup;
 			children = (
 				D90B24AA1AAA60940076F006 /* ImaginamosTest */,
 				D90B24C71AAA60940076F006 /* ImaginamosTestTests */,
 				D90B24A91AAA60940076F006 /* Products */,
+				458ABC5A1A4415E399FCBE1B /* Pods */,
+				23904CF698D650CB3D73D005 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +194,16 @@
 		D90B24AA1AAA60940076F006 /* ImaginamosTest */ = {
 			isa = PBXGroup;
 			children = (
+				D90B25101AAA914D0076F006 /* Util */,
+				D90B24FE1AAA7F7C0076F006 /* Services */,
+				D90B24EB1AAA7BA80076F006 /* Factory */,
+				D90B24D41AAA66E30076F006 /* Builders */,
+				D90B24D71AAA764B0076F006 /* Controllers */,
+				D962DABE1AAAA28700D2A2F0 /* Views */,
+				D90B24D51AAA763A0076F006 /* Model */,
+				D90B24D61AAA76430076F006 /* Resources */,
 				D90B24AF1AAA60940076F006 /* AppDelegate.h */,
 				D90B24B01AAA60940076F006 /* AppDelegate.m */,
-				D90B24B51AAA60940076F006 /* ViewController.h */,
-				D90B24B61AAA60940076F006 /* ViewController.m */,
-				D90B24B81AAA60940076F006 /* Main.storyboard */,
-				D90B24BB1AAA60940076F006 /* Images.xcassets */,
-				D90B24BD1AAA60940076F006 /* LaunchScreen.xib */,
-				D90B24B21AAA60940076F006 /* ImaginamosTest.xcdatamodeld */,
 				D90B24AB1AAA60940076F006 /* Supporting Files */,
 			);
 			path = ImaginamosTest;
@@ -122,6 +235,126 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D90B24D41AAA66E30076F006 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				D90B24E71AAA7A570076F006 /* IMBuilder.h */,
+				D90B24E81AAA7A570076F006 /* IMBuilder.m */,
+				D90B24EA1AAA7B010076F006 /* IMObjectBuilder.h */,
+				D90B24F21AAA7C6C0076F006 /* IMCategoryBuilder.h */,
+				D90B24F31AAA7C6C0076F006 /* IMCategoryBuilder.m */,
+				D90B24F51AAA7D3C0076F006 /* IMSubcategoryBuilder.h */,
+				D90B24F61AAA7D3C0076F006 /* IMSubcategoryBuilder.m */,
+				D90B24F81AAA7DC40076F006 /* IMItemBuilder.h */,
+				D90B24F91AAA7DC40076F006 /* IMItemBuilder.m */,
+				D90B24FB1AAA7E5B0076F006 /* IMImageBuilder.h */,
+				D90B24FC1AAA7E5B0076F006 /* IMImageBuilder.m */,
+			);
+			name = Builders;
+			sourceTree = "<group>";
+		};
+		D90B24D51AAA763A0076F006 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D90B24E41AAA791C0076F006 /* IMSubcategory.h */,
+				D90B24E51AAA791C0076F006 /* IMSubcategory.m */,
+				D90B24E11AAA791C0076F006 /* IMImage.h */,
+				D90B24E21AAA791C0076F006 /* IMImage.m */,
+				D90B24DE1AAA791C0076F006 /* IMCategory.h */,
+				D90B24DF1AAA791C0076F006 /* IMCategory.m */,
+				D90B250A1AAA8DAB0076F006 /* IMCItem.h */,
+				D90B250B1AAA8DAB0076F006 /* IMCItem.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D90B24D61AAA76430076F006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D99BEA211AAAD99000B9C005 /* ic_no_image.png */,
+				D99BEA231AAAD99B00B9C005 /* ic_no_image@2x.png */,
+				D99BEA141AAAC6A800B9C005 /* ic_close.png */,
+				D99BEA161AAAC6E800B9C005 /* ic_close@2x.png */,
+				D90B24B81AAA60940076F006 /* Main.storyboard */,
+				D90B24BB1AAA60940076F006 /* Images.xcassets */,
+				D90B24B21AAA60940076F006 /* ImaginamosTest.xcdatamodeld */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D90B24D71AAA764B0076F006 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D90B24D81AAA77540076F006 /* IMStartViewController.h */,
+				D90B24D91AAA77540076F006 /* IMStartViewController.m */,
+				D90B25061AAA8B840076F006 /* IMControllersDelegate.h */,
+				D962DABF1AAAA30500D2A2F0 /* IMCategoriesViewController.h */,
+				D962DAC01AAAA30500D2A2F0 /* IMCategoriesViewController.m */,
+				D98F36E51AAAB97D00948118 /* IMCItemsViewController.h */,
+				D98F36E61AAAB97D00948118 /* IMCItemsViewController.m */,
+				D962DAC21AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.h */,
+				D962DAC31AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m */,
+				D962DAC51AAAADDE00D2A2F0 /* IMSubcategoryDataSource.h */,
+				D962DAC61AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m */,
+				D99BEA1B1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.h */,
+				D99BEA1C1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D90B24EB1AAA7BA80076F006 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D90B24EC1AAA7BC00076F006 /* IMFactory.h */,
+				D90B24ED1AAA7BC00076F006 /* IMFactory.m */,
+				D90B24EF1AAA7BFB0076F006 /* IMManagedObjectFactory.h */,
+				D90B24F01AAA7BFB0076F006 /* IMManagedObjectFactory.m */,
+				D90B250D1AAA8F1D0076F006 /* IMAbstractServiceFactory.h */,
+				D90B250E1AAA8F1D0076F006 /* IMAbstractServiceFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		D90B24FE1AAA7F7C0076F006 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D90B24FF1AAA7FAD0076F006 /* IMCategoryService.h */,
+				D90B25001AAA7FAD0076F006 /* IMCategoryService.m */,
+				D90B25021AAA80930076F006 /* IMConnectionService.h */,
+				D90B25031AAA80930076F006 /* IMConnectionService.m */,
+				D90B25051AAA819E0076F006 /* IMServiceDelegate.h */,
+				D9E4061F1AAA977100FEF781 /* IMQueueService.h */,
+				D9E406201AAA977100FEF781 /* IMQueueService.m */,
+				D99BEA111AAABEAF00B9C005 /* IMSubcategoryService.h */,
+				D99BEA121AAABEAF00B9C005 /* IMSubcategoryService.m */,
+				D99BEA1E1AAACEB100B9C005 /* IMImageService.h */,
+				D99BEA1F1AAACEB100B9C005 /* IMImageService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D90B25101AAA914D0076F006 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D90B25111AAA91680076F006 /* IMCConstants.h */,
+				D90B25121AAA91680076F006 /* IMCConstants.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		D962DABE1AAAA28700D2A2F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D962DABB1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.h */,
+				D962DABC1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m */,
+				D962DAC81AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.h */,
+				D962DAC91AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.m */,
+				D99BEA181AAAC83500B9C005 /* IMCItemCollectionViewCell.h */,
+				D99BEA191AAAC83500B9C005 /* IMCItemCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +362,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D90B24CE1AAA60940076F006 /* Build configuration list for PBXNativeTarget "ImaginamosTest" */;
 			buildPhases = (
+				5495B10C454F87CB2F56F783 /* Check Pods Manifest.lock */,
 				D90B24A41AAA60940076F006 /* Sources */,
 				D90B24A51AAA60940076F006 /* Frameworks */,
 				D90B24A61AAA60940076F006 /* Resources */,
+				4895EB4E5A3D671B159F92BC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +406,7 @@
 				TargetAttributes = {
 					D90B24A71AAA60940076F006 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = U52ZWTENC7;
 					};
 					D90B24C31AAA60940076F006 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -202,8 +438,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D99BEA221AAAD99000B9C005 /* ic_no_image.png in Resources */,
+				D99BEA171AAAC6E800B9C005 /* ic_close@2x.png in Resources */,
 				D90B24BA1AAA60940076F006 /* Main.storyboard in Resources */,
-				D90B24BF1AAA60940076F006 /* LaunchScreen.xib in Resources */,
+				D99BEA241AAAD99B00B9C005 /* ic_no_image@2x.png in Resources */,
+				D99BEA151AAAC6A800B9C005 /* ic_close.png in Resources */,
 				D90B24BC1AAA60940076F006 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,15 +456,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4895EB4E5A3D671B159F92BC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5495B10C454F87CB2F56F783 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D90B24A41AAA60940076F006 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90B24E61AAA791C0076F006 /* IMSubcategory.m in Sources */,
+				D90B25041AAA80930076F006 /* IMConnectionService.m in Sources */,
+				D90B24F41AAA7C6C0076F006 /* IMCategoryBuilder.m in Sources */,
+				D962DAC41AAAA35B00D2A2F0 /* IMCategoriesCollectionViewDataSource.m in Sources */,
+				D99BEA1D1AAAC89C00B9C005 /* IMItemCollectionViewDataSource.m in Sources */,
+				D90B24E91AAA7A570076F006 /* IMBuilder.m in Sources */,
+				D90B25131AAA91680076F006 /* IMCConstants.m in Sources */,
+				D90B25011AAA7FAD0076F006 /* IMCategoryService.m in Sources */,
 				D90B24B11AAA60940076F006 /* AppDelegate.m in Sources */,
+				D99BEA201AAACEB100B9C005 /* IMImageService.m in Sources */,
+				D90B250F1AAA8F1D0076F006 /* IMAbstractServiceFactory.m in Sources */,
+				D99BEA1A1AAAC83500B9C005 /* IMCItemCollectionViewCell.m in Sources */,
+				D962DABD1AAAA28200D2A2F0 /* IMCategoryCollectionViewCell.m in Sources */,
+				D962DACA1AAAAE7700D2A2F0 /* IMSubcategoryTableViewCell.m in Sources */,
+				D90B24E01AAA791C0076F006 /* IMCategory.m in Sources */,
+				D90B24DA1AAA77540076F006 /* IMStartViewController.m in Sources */,
+				D99BEA131AAABEAF00B9C005 /* IMSubcategoryService.m in Sources */,
+				D90B24F71AAA7D3C0076F006 /* IMSubcategoryBuilder.m in Sources */,
 				D90B24B41AAA60940076F006 /* ImaginamosTest.xcdatamodeld in Sources */,
-				D90B24B71AAA60940076F006 /* ViewController.m in Sources */,
+				D98F36E71AAAB97D00948118 /* IMCItemsViewController.m in Sources */,
+				D90B24EE1AAA7BC00076F006 /* IMFactory.m in Sources */,
+				D962DAC11AAAA30500D2A2F0 /* IMCategoriesViewController.m in Sources */,
 				D90B24AE1AAA60940076F006 /* main.m in Sources */,
+				D90B24FD1AAA7E5B0076F006 /* IMImageBuilder.m in Sources */,
+				D90B24F11AAA7BFB0076F006 /* IMManagedObjectFactory.m in Sources */,
+				D90B24FA1AAA7DC40076F006 /* IMItemBuilder.m in Sources */,
+				D90B24E31AAA791C0076F006 /* IMImage.m in Sources */,
+				D962DAC71AAAADDE00D2A2F0 /* IMSubcategoryDataSource.m in Sources */,
+				D90B250C1AAA8DAB0076F006 /* IMCItem.m in Sources */,
+				D9E406211AAA977100FEF781 /* IMQueueService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +552,6 @@
 				D90B24B91AAA60940076F006 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D90B24BD1AAA60940076F006 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D90B24BE1AAA60940076F006 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -347,21 +637,29 @@
 		};
 		D90B24CF1AAA60940076F006 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5195CBF9C005AEB8EBCCB443 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ImaginamosTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		D90B24D01AAA60940076F006 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98436ECA26CC23D0912AB472 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ImaginamosTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -418,6 +716,7 @@
 				D90B24D01AAA60940076F006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D90B24D11AAA60940076F006 /* Build configuration list for PBXNativeTarget "ImaginamosTestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +725,7 @@
 				D90B24D31AAA60940076F006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
